@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>White Rabbit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/neo.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/neo.js" defer></script>
+  </head>  
+  <body>
+    <h1>
+      Wake up Neo...
+    </h1>
+    <div class="intro">
+      <span>We know who you are:</span>
+      <form id="name">
+        <input class="name" type="text" placeholder="Cybername" autofocus>
+      </form>
+    </div>
+    <div class="container">
+      <div>
+        <ol class="history">
+        </ol>
+      </div>
+      <div id="tempDiv"><span class="temp"></span></div>
+      <div id="caret" class="isOn">
+        <input id="dummy">
+      </div>
+    </div>
+    <div>
+      <p>
+        Made by Henry Valbuena...
+      </p>
+    </div>
+  </body>
+</html>
