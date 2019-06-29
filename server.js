@@ -5,6 +5,7 @@ var http    = require("http");
 var server  = http.Server(app);
 // setup socket.io
 var io = require("socket.io")(server);
+var port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
@@ -23,6 +24,6 @@ io.on("connection", socket => {
     });
 });
 
-server.listen(3000, () => {
+server.listen(port, () => {
     console.log("Connected...");
 });
