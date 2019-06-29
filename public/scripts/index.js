@@ -3,10 +3,9 @@ $(function () {
     var flag;
     var nickname;
     var socket = io();
-  
+
     $('#name').on('submit', () => {
       nickname = $('.name').val();
-      console.log(nickname);
       flag = true;
       $('.intro').fadeToggle(() => {
         $('.container').fadeToggle(() => {
@@ -21,13 +20,12 @@ $(function () {
     }, 500);
   
     $(document).keydown(e => {
-      // console.log(e);
       $('#dummy').val("");
       if (flag) {
         if (String(e.originalEvent.key).match(/enter/i)) {
           whenEnter();
         } else if (String(e.originalEvent.key).match(/backspace/i)) {
-          whenBackspace(e.originalEvent.key);
+          whenBackspace(e);
         } else {
           addingText(e.originalEvent.key);
         }
@@ -67,7 +65,10 @@ $(function () {
       }
     }
   
-    function whenBackspace(ch) {
+    function whenBackspace(e) {
+      let ch = e.originalEvent.key;
+      // disable back space navigation
+      e.preventDefault();
       //take the current value of .temp
       var str = $('#tempDiv span:last-child').text();
       //check if the span is empty and counter is greater than 0

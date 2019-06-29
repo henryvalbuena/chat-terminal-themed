@@ -1,7 +1,7 @@
 {
   "name": "chatbot",
   "version": "1.0.0",
-  "description": "chatbot that uses APIs and persisten data",
+  "description": "chatbot that uses APIs and persistent data",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
