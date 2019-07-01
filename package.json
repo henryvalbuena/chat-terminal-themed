@@ -13,5 +13,13 @@
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roycloud/chatbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roycloud/chatbot/issues"
+  },
+  "homepage": "https://github.com/roycloud/chatbot#readme"
 }

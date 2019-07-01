@@ -9,7 +9,7 @@ Simple clone and run
 
     npm run start
 
-## Build With
+## Built With
 - [Socket.io](https://socket.io/)
 - [Node.js](https://nodejs.org/en/)
 - [Express.js](https://expressjs.com/)
